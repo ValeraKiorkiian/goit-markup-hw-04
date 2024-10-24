@@ -80,10 +80,13 @@ img {
   letter-spacing: 0.02em;
   color: #2e2f42;
   padding: 24px 0;
-  position: relative;
-  transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
-.nav-menu:active::after {
+.li-class .nav-menu {
+  position: relative;
+  color: #404bbf;
+}
+
+.li-class .nav-menu::after {
   position: absolute;
   content: '';
   width: 100%;
@@ -423,7 +426,7 @@ a {
   transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 .icons-link:hover,
-.icons-list:focus {
+.icons-link:focus {
   background-color: #31d0aa;
 }
 .social-media-p {
